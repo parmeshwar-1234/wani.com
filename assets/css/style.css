@@ -366,6 +366,128 @@ body { background: var(--white); }
   pointer-events: all;
 }
 
+/* Basic styling for submenus and sub-submenus */
+.navbar-item {
+  position: relative;
+}
+
+.submenu,
+.sub-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  list-style: none;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.submenu .submenu-item {
+  position: relative;
+}
+
+.submenu li,
+.sub-submenu li {
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+.submenu li:last-child,
+.sub-submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu a,
+.sub-submenu a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--jet);
+  font-size: 14px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.sub-submenu a {
+  font-size: 13px; /* Smaller font size for sub-submenus */
+}
+
+.submenu a:hover,
+.sub-submenu a:hover {
+  color: var(--bright-navy-blue);
+}
+
+/* Show submenu on hover for desktop */
+.navbar-item:hover > .submenu,
+.submenu-item:hover > .sub-submenu {
+  display: block;
+}
+
+/* Add pop-out effect for sub-submenu in desktop view */
+@media (min-width: 769px) {
+  /* Make the sub-submenu pop out */
+  .submenu-item:hover > .sub-submenu {
+    left: 100%;
+    top: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .submenu-item > .sub-submenu {
+    min-width: 180px;
+  }
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  /* Adjust submenu styles for mobile view */
+  .submenu,
+  .sub-submenu {
+    position: relative;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+  }
+
+  .submenu a,
+  .sub-submenu a {
+    padding: 15px 20px;
+    color: var(--jet);
+    font-size: 14px;
+  }
+
+  .sub-submenu a {
+    font-size: 13px; /* Slightly smaller for sub-submenu in mobile */
+  }
+
+  /* Toggle submenu visibility on mobile click */
+  .navbar-item .navbar-link {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .navbar-item .navbar-link::after {
+    content: "▼";
+    font-size: 0.8em;
+    position: absolute;
+    right: 10px;
+    color: var(--jet);
+  }
+
+  .submenu-item .submenu-link::after {
+    content: "►";
+    font-size: 0.8em;
+    position: absolute;
+    right: 10px;
+    color: var(--jet);
+  }
+
+  /* Ensure nested submenus open on click */
+  .navbar-item.open > .submenu,
+  .submenu-item.open > .sub-submenu {
+    display: block;
+  }
+}
 
 
 
