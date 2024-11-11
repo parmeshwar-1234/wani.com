@@ -1,241 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanitravels - Travel agancy</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wanitravels - Travel agancy</title>
-
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
 
-    <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+91966481001" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
 
-    <div class="header-top">
-      <div class="container">
+            <div class="wrapper">
+              <p class="helpline-title">For Further Inquires :</p>
 
-        <a href="tel:+91966481001" class="helpline-box">
+              <p class="helpline-number">+91 96642 81001</p>
+            </div>
+          </a>
 
-          <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
-          </div>
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo.svg" alt="Wanitravels logo"> -->
+            <h2 style="color: white">Wani Travels</h2>
+          </a>
 
-          <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
-
-            <p class="helpline-number">+91 96642 81001</p>
-          </div>
-
-        </a>
-
-        <a href="#" class="logo">
-          <!-- <img src="./assets/images/logo.svg" alt="Wanitravels logo"> -->
-          <h2 style="color: white; ">Wani Travels</h2>
-        </a>
-
-        <div class="header-btn-group">
-
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
-          </button>
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <!-- <img src="./assets/images/logo.svg" alt="Wanitravels logo"> -->
-              <h2 style="color: black; ">Wani Travels</h2>
-            </a>
-
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
             </button>
 
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
           </div>
-
-          <ul class="navbar-list">
-
-            <li>
-              <a href="#" class="navbar-link" data-nav-link>home</a>
-            </li>
-            
-              <!-- Group Tours with submenus and sub-submenus -->
-        <li class="navbar-item">
-          <a href="#" class="navbar-link" data-nav-link>Group Tours</a>
-          <ul class="submenu">
-            <li class="submenu-item">
-              <a href="#" class="submenu-link">Short spiritual tours</a>
-              <ul class="sub-submenu">
-                <li><a href="#">2 Days Ashtavinayak yatra</a></li>
-                <li><a href="#">3 days Ashtavinayak yatra</a></li>
-                <li><a href="#">Pandharpur Tuljapur Ganagapur Akkalkot yatra</a></li>
-                <li><a href="#">Spiritual Madhya Pradesh</a></li>
-              </ul>
-            </li>
-            <li class="submenu-item">
-              <a href="#" class="submenu-link">Domestic tours</a>
-              <ul class="sub-submenu">
-                <li><a href="#">Kashmir with Vaishnodevi</a></li>
-                <li><a href="#">Char dham Yatra</a></li>
-                <li><a href="#">Narmada Parikrama</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <!-- Individual Tours with submenus and sub-submenus -->
-        <li class="navbar-item">
-          <a href="#" class="navbar-link" data-nav-link>Individual Tours</a>
-          <ul class="submenu">
-            <li class="submenu-item">
-              <a href="#" class="submenu-link">Domestic</a>
-              <ul class="sub-submenu">
-                <li><a href="#">Andaman</a></li>
-                <li><a href="#">Kashmir</a></li>
-                <li><a href="#">Himachal</a></li>
-                <li><a href="#">Goa</a></li>
-                <li><a href="#">Maharashtra</a></li>
-                <li><a href="#">Kerala</a></li>
-                <li><a href="#">Sikkim</a></li>
-                <li><a href="#">Uttarakhand</a></li>
-              </ul>
-            </li>
-            <li class="submenu-item">
-              <a href="#" class="submenu-link">International</a>
-              <ul class="sub-submenu">
-                <li><a href="#">Thailand</a></li>
-                <li><a href="#">Dubai</a></li>
-                <li><a href="#">Bali</a></li>
-                <li><a href="#">Vietnam</a></li>
-                <li><a href="#">Sri Lanka</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-            
-            <li>
-              <a href="about.html" class="navbar-link" data-nav-link>About us</a>
-            </li>
-            
-             <li>
-              <a href="careers.html" class="navbar-link" data-nav-link>Careers</a>
-            </li>
-            <li>
-              <a href="contact.html" class="navbar-link" data-nav-link>Contact us</a>
-            </li>
-          </ul>
-
-        </nav>
-
-        <button class="btn btn-primary">Book Now</button>
-
+        </div>
       </div>
-    </div>
 
-  </header>
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
 
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <!-- <img src="./assets/images/logo.svg" alt="Wanitravels logo"> -->
+                <h2 style="color: black">Wani Travels</h2>
+              </a>
 
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
 
-  <main>
-    <article>
+            <ul class="navbar-list">
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>home</a>
+              </li>
 
-      <!-- 
+              <!-- Group Tours with submenus and sub-submenus -->
+              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>Group Tours</a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="#" class="submenu-link">Short spiritual tours</a>
+                    <ul class="sub-submenu">
+                      <li><a href="#">2 Days Ashtavinayak yatra</a></li>
+                      <li><a href="#">3 days Ashtavinayak yatra</a></li>
+                      <li>
+                        <a href="#"
+                          >Pandharpur Tuljapur Ganagapur Akkalkot yatra</a
+                        >
+                      </li>
+                      <li><a href="#">Spiritual Madhya Pradesh</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="submenu-link">Domestic tours</a>
+                    <ul class="sub-submenu">
+                      <li><a href="#">Kashmir with Vaishnodevi</a></li>
+                      <li><a href="#">Char dham Yatra</a></li>
+                      <li><a href="#">Narmada Parikrama</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Individual Tours with submenus and sub-submenus -->
+              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link
+                  >Individual Tours</a
+                >
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="#" class="submenu-link">Domestic</a>
+                    <ul class="sub-submenu">
+                      <li><a href="#">Andaman</a></li>
+                      <li><a href="#">Kashmir</a></li>
+                      <li><a href="#">Himachal</a></li>
+                      <li><a href="#">Goa</a></li>
+                      <li><a href="#">Maharashtra</a></li>
+                      <li><a href="#">Kerala</a></li>
+                      <li><a href="#">Sikkim</a></li>
+                      <li><a href="#">Uttarakhand</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="submenu-link">International</a>
+                    <ul class="sub-submenu">
+                      <li><a href="#">Thailand</a></li>
+                      <li><a href="#">Dubai</a></li>
+                      <li><a href="#">Bali</a></li>
+                      <li><a href="#">Vietnam</a></li>
+                      <li><a href="#">Sri Lanka</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="about.html" class="navbar-link" data-nav-link
+                  >About us</a
+                >
+              </li>
+
+              <li>
+                <a href="careers.html" class="navbar-link" data-nav-link
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="navbar-link" data-nav-link
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="hero" id="home">
-        <div class="container">
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">Journey to explore world</h2>
 
-          <h2 class="h1 hero-title">Journey to explore world</h2>
+            <p class="hero-text">
+              Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit
+              class corporis nostra rem quos voluptatibus habitant? Fames,
+              vivamus minim nemo enim, gravida lobortis quasi, eum.
+            </p>
 
-          <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
-          </p>
+            <div class="btn-group">
+              <button class="btn btn-primary">Learn more</button>
 
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
-
-            <button class="btn btn-secondary">Book now</button>
+              <button class="btn btn-secondary">Book now</button>
+            </div>
           </div>
+        </section>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #TOUR SEARCH
       -->
 
-      <!-- <section class="tour-search">
+        <!-- <section class="tour-search">
         <div class="container">
 
           <form action="" class="tour-search-form">
@@ -272,662 +262,635 @@
         </div>
       </section> -->
 
-
-
-
-
-      <!-- 
+        <!-- 
         - #POPULAR
       -->
 
-      <section class="popular" id="destination">
-        <div class="container">
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Uncover place</p>
 
-          <p class="section-subtitle">Uncover place</p>
+            <h2 class="h2 section-title">Popular Tours</h2>
 
-          <h2 class="h2 section-title">Popular Tours</h2>
+            <p class="section-text">
+              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
+              nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
+              tenetur, aptent.
+            </p>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/himachal.jpg"
+                      alt="San miguel, italy"
+                      loading="lazy"
+                    />
+                  </figure>
 
-          <ul class="popular-list">
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
 
-            <li>
-              <div class="popular-card">
+                    <p class="card-subtitle">
+                      <a href="#">Himachel Pradesh</a>
+                    </p>
 
-                <figure class="card-img">
-                  <img src="./assets/images/himachal.jpg" alt="San miguel, italy" loading="lazy">
-                </figure>
+                    <h3 class="h3 card-title">
+                      <a href="#">6D/7N</a>
+                    </h3>
 
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <p class="card-text">
+                      Chandigarh - Shimla - Manali - Manikaran
+                    </p>
                   </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Himachel Pradesh</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">6D/7N</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Chandigarh - Shimla - Manali - Manikaran
-                  </p>
-
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/andaman.jpeg"
+                      alt="Burj khalifa, dubai"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li>
-              <div class="popular-card">
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
 
-                <figure class="card-img">
-                  <img src="./assets/images/andaman.jpeg" alt="Burj khalifa, dubai" loading="lazy">
-                </figure>
+                    <p class="card-subtitle">
+                      <a href="#">Andaman</a>
+                    </p>
 
-                <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">7D/8N</a>
+                    </h3>
 
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <p class="card-text">
+                      Port Blair - Rose & North Bay Island - Baratang & Lime
+                      Stone Cave -Havelock - Neil
+                    </p>
                   </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Andaman</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">7D/8N</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Port Blair - Rose & North Bay Island - Baratang & Lime Stone Cave -Havelock - Neil
-                  </p>
-
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/kerala.jpg"
+                      alt="Kyoto temple, japan"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li>
-              <div class="popular-card">
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
 
-                <figure class="card-img">
-                  <img src="./assets/images/kerala.jpg" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
+                    <p class="card-subtitle">
+                      <a href="#">Exotic Kerala</a>
+                    </p>
 
-                <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">7D/8N</a>
+                    </h3>
 
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <p class="card-text">
+                      Cochin - Munnar - Thekkady - Alappuzha - Kovalam -
+                      Thiruvananthapuram
+                    </p>
                   </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Exotic Kerala</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">7D/8N</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Cochin -  Munnar - Thekkady - Alappuzha - Kovalam - Thiruvananthapuram
-                  </p>
-
                 </div>
+              </li>
+            </ul>
 
-              </div>
-            </li>
+            <button class="btn btn-primary">More destintion</button>
+          </div>
+        </section>
 
-          </ul>
-
-          <button class="btn btn-primary">More destintion</button>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #PACKAGE
       -->
 
-      <section class="package" id="package">
-        <div class="container">
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">Popular Packages</p>
 
-          <p class="section-subtitle">Popular Packages</p>
+            <h2 class="h2 section-title">Checkout Our Packages</h2>
 
-          <h2 class="h2 section-title">Checkout Our Packages</h2>
+            <p class="section-text">
+              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
+              nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
+              tenetur, aptent.
+            </p>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-1.jpg"
+                      alt="Experience The Great Holiday On Beach"
+                      loading="lazy"
+                    />
+                  </figure>
 
-          <ul class="package-list">
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Experience The Great Holiday On Beach
+                    </h3>
 
-            <li>
-              <div class="package-card">
+                    <p class="card-text">
+                      Laoreet, voluptatum nihil dolor esse quaerat mattis
+                      explicabo maiores, est aliquet porttitor! Eaque, cras,
+                      aspernatur.
+                    </p>
 
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
 
-                <div class="card-content">
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
 
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
 
-                  <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(25 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
+                          <p class="text">Malaysia</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
 
-                  <p class="price">
-                    ₹45000
-                    <span>/ per person</span>
-                  </p>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(25 reviews)</p>
 
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/hp.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Snowy Holiday To The Himachal Pradesh</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
                       </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Himachal Pradesh</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
                     </div>
 
+                    <p class="price">
+                      ₹45000
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/hp.jpg"
+                      alt="Summer Holiday To The Oxolotan River"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Snowy Holiday To The Himachal Pradesh
+                    </h3>
+
+                    <p class="card-text">
+                      Laoreet, voluptatum nihil dolor esse quaerat mattis
+                      explicabo maiores, est aliquet porttitor! Eaque, cras,
+                      aspernatur.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Himachal Pradesh</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
 
-                  <p class="price">
-                    $₹25000
-                    <span>/ per person</span>
-                  </p>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(20 reviews)</p>
 
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/goa.jpeg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Goa Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
                       </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Goa</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
                     </div>
 
+                    <p class="price">
+                      $₹25000
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/goa.jpeg"
+                      alt="Santorini Island's Weekend Vacation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Goa Weekend Vacation</h3>
+
+                    <p class="card-text">
+                      Laoreet, voluptatum nihil dolor esse quaerat mattis
+                      explicabo maiores, est aliquet porttitor! Eaque, cras,
+                      aspernatur.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Goa</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
 
-                  <p class="price">
-                    ₹15000
-                    <span>/ per person</span>
-                  </p>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(40 reviews)</p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
 
+                    <p class="price">
+                      ₹15000
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
                 </div>
+              </li>
+            </ul>
 
+            <button class="btn btn-primary">View All Packages</button>
+          </div>
+        </section>
+
+        <section class="counter" id="counter">
+          <div class="counter-container">
+            <!-- Header section -->
+            <div class="header">
+              <h4 class="title">Metrics</h4>
+              <h1 class="sub-title">xyz</h1>
+            </div>
+            <!-- Counters section -->
+            <div class="counters">
+              <!-- Counter 1 -->
+
+              <div class="counter customer">
+                <h2 class="number">
+                  <span class="value" data-value="500">0</span>+
+                </h2>
+                <p class="detail">Satisfied Customers</p>
               </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">View All Packages</button>
-
-        </div>
-      </section>
-
-      <section class="counter" id="counter">
-      <div class="counter-container">
-        <!-- Header section -->
-        <div class="header">
-          <h4 class="title">Metrics</h4>
-          <h1 class="sub-title">xyz</h1>
-        </div>
-        <!-- Counters section -->
-        <div class="counters">
-          <!-- Counter 1 -->
-
-          <div class="counter customer">
-            <h2 class="number"><span class="value" data-value="500">0</span>+</h2>
-            <p class="detail">Satisfied Customers</p>
+              <!-- Counter 2 -->
+              <div class="counter total">
+                <h2 class="number">
+                  <span class="value" data-value="1000">0</span>+
+                </h2>
+                <p class="detail">Total trips</p>
+              </div>
+              <!-- Counter 3 -->
+              <div class="counter international">
+                <h2 class="number">
+                  <span class="value" data-value="500">0</span>+
+                </h2>
+                <p class="detail">International Trips</p>
+              </div>
+              <!-- Counter 4 -->
+              <div class="counter domestic">
+                <h2 class="number">
+                  <span class="value" data-value="500">0</span>+
+                </h2>
+                <p class="detail">Domestic Trips</p>
+              </div>
+            </div>
           </div>
-          <!-- Counter 2 -->
-          <div class="counter total">
-            <h2 class="number"><span class="value" data-value="1000">0</span>+</h2>
-            <p class="detail">Total trips</p>
-          </div>
-          <!-- Counter 3 -->
-          <div class="counter international">
-            <h2 class="number"><span class="value" data-value="500">0</span>+</h2>
-            <p class="detail">International Trips</p>
-          </div>
-          <!-- Counter 4 -->
-          <div class="counter domestic">
-            <h2 class="number"><span class="value" data-value="500">0</span>+</h2>
-            <p class="detail">Domestic Trips</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    
-      <!-- 
+        <!-- 
         - #GALLERY
       -->
 
-      <section class="gallery" id="gallery">
-        <div class="container">
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <p class="section-subtitle">Photo Gallery</p>
 
-          <p class="section-subtitle">Photo Gallery</p>
+            <h2 class="h2 section-title">Photo's From Travellers</h2>
 
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
+            <p class="section-text">
+              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
+              nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
+              tenetur, aptent.
+            </p>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-1.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
 
-          <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-2.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
-              </figure>
-            </li>
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-3.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
-              </figure>
-            </li>
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-4.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
-              </figure>
-            </li>
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-5.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #CTA
       -->
 
-      <section class="cta" id="contact">
-        <div class="container">
+        <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Call To Action</p>
 
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
+              <h2 class="h2 section-title">
+                Ready For Unforgatable Travel. Remember Us!
+              </h2>
 
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+              <p class="section-text">
+                Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
+                nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
+                tenetur, aptent.
+              </p>
+            </div>
 
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
-            </p>
+            <button class="btn btn-secondary">Contact Us !</button>
           </div>
+        </section>
+      </article>
+    </main>
 
-          <button class="btn btn-secondary">Contact Us !</button>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer">
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <!-- <img src="./assets/images/logo.svg" alt="Wanitravels logo"> -->
+              <h2 style="color: white">Wani Travels</h2>
+            </a>
 
-    <div class="footer-top">
-      <div class="container">
+            <p class="footer-text">
+              Urna ratione ante harum provident, eleifend, vulputate molestiae
+              proin fringilla, praesentium magna conubia at perferendis,
+              pretium, aenean aut ultrices.
+            </p>
+          </div>
 
-        <div class="footer-brand">
+          <div class="footer-contact">
+            <h4 class="contact-title">Contact Us</h4>
 
-          <a href="#" class="logo">
-            <!-- <img src="./assets/images/logo.svg" alt="Wanitravels logo"> -->
-            <h2 style="color: white; ">Wani Travels</h2>
-          </a>
+            <p class="contact-text">Feel free to contact and reach us !!</p>
 
-          <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
-            perferendis, pretium, aenean aut ultrices.
-          </p>
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
 
+                <a href="tel:+919664281001" class="contact-link"
+                  >+91 96642 81001</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="mailto:wanitravels009@gmail.com" class="contact-link"
+                  >info.WaniTravels.com</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>
+                  6, Punyodaya sky lounge, Ahilyabai chowk, Kalyan (W),
+                  Maharashtra, India
+                </address>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-form">
+            <p class="form-text">
+              Subscribe our newsletter for more update & news !!
+            </p>
+
+            <form action="" class="form-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Enter Your Email"
+                required
+              />
+
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-contact">
-
-          <h4 class="contact-title">Contact Us</h4>
-
-          <p class="contact-text">
-            Feel free to contact and reach us !!
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 <a href="https://brainovert.com">Brainovert</a>. All
+            rights reserved
           </p>
 
-          <ul>
-
-            <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
-
-              <a href="tel:+919664281001" class="contact-link">+91 96642 81001</a>
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
             </li>
 
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <a href="mailto:wanitravels009@gmail.com" class="contact-link">info.WaniTravels.com</a>
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
             </li>
 
-            <li class="contact-item">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>6, Punyodaya sky lounge, Ahilyabai chowk, Kalyan (W), Maharashtra, India</address>
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
             </li>
-
           </ul>
-
         </div>
-
-        <div class="footer-form">
-
-          <p class="form-text">
-            Subscribe our newsletter for more update & news !!
-          </p>
-
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
-          </form>
-
-        </div>
-
       </div>
-    </div>
+    </footer>
 
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2024 <a href="https://brainovert.com">Brainovert</a>. All rights reserved
-        </p>
-
-        <ul class="footer-bottom-list">
-
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #GO TO TOP
   -->
 
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/counter.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/counter.js"></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <script>
-    // JavaScript to handle submenu and sub-submenu toggling on mobile
-document.querySelectorAll('.navbar-item').forEach(item => {
-  item.addEventListener('click', function() {
-    this.classList.toggle('open');
-  });
-});
+    <script>
+      // JavaScript to handle submenu and sub-submenu toggling on mobile
+      document.querySelectorAll(".navbar-item").forEach((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("open");
+        });
+      });
 
-document.querySelectorAll('.submenu-item').forEach(subitem => {
-  subitem.addEventListener('click', function(event) {
-    event.stopPropagation(); // Prevents closing parent menu
-    this.classList.toggle('open');
-  });
-});
-
-
-
-
-  </script>
-</body>
-
+      document.querySelectorAll(".submenu-item").forEach((subitem) => {
+        subitem.addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevents closing parent menu
+          this.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
 </html>
