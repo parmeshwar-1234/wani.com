@@ -248,13 +248,13 @@ body { background: var(--white); }
   color: var(--white);
 }
 
-.search-btn,
+/* .search-btn, */
 .nav-open-btn {
   font-size: 30px;
   color: inherit;
 }
 
-.search-btn { font-size: 20px; }
+/* .search-btn { font-size: 20px; } */
 
 .header-bottom { border-bottom: 1px solid hsla(0, 0%, 100%, 0.1); }
 
@@ -1014,7 +1014,7 @@ address {
 
   .header-top .logo img { max-width: unset; }
 
-  .search-btn { font-size: 30px; }
+  /* .search-btn { font-size: 30px; } */
 
   .nav-open-btn { font-size: 40px; }
 
@@ -1441,7 +1441,7 @@ address {
 }
 
 .counter-container .header .title {
-  font-family: "Clicker Script", cursive;
+  /* font-family: "Clicker Script", cursive; */
   font-size: 42px;
   color: #ef7e39;
 }
