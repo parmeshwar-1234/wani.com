@@ -114,6 +114,16 @@
             margin: 20px 0;
             color: #777;
         }
+
+        .responsive-iframe {
+            width: 100%;
+            max-width: 560px;
+            /* Maintain the original iframe width limit */
+            height: auto;
+            aspect-ratio: 16 / 9;
+            /* Ensure the aspect ratio is preserved */
+            border: none;
+        }
     </style>
 </head>
 
@@ -121,9 +131,15 @@
     <header>
         <h1>Ashtavinayak Yatra Tour Package</h1>
     </header>
-
+    <section>
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/5kYVqBYY_aE?si=x6S454duzd-ythKv"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </section>
     <section class="itinerary">
-        <h2>Itinerary</h2>
+        <h2 style="text-align: center;">ITINERARY</h2>
         <div class="itinerary-container">
             <!-- Day 1 -->
             <div class="itinerary-card">
