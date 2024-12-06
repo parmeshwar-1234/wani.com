@@ -115,14 +115,85 @@
             color: #777;
         }
 
+        .responsive-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
         .responsive-iframe {
             width: 100%;
             max-width: 560px;
-            /* Maintain the original iframe width limit */
-            height: auto;
+            /* Ensures a limit on the iframe's width */
             aspect-ratio: 16 / 9;
-            /* Ensure the aspect ratio is preserved */
+            /* Keeps the video aspect ratio */
+            margin-bottom: 20px;
             border: none;
+        }
+
+        .responsive-section p {
+            font-size: 1rem;
+            /* Base font size */
+            line-height: 1.6;
+            max-width: 600px;
+            /* Limits the paragraph's width */
+            margin: 0 auto;
+            padding: 0 10px;
+            /* Adds some padding for smaller screens */
+        }
+
+        @media (max-width: 768px) {
+            .responsive-section p {
+                font-size: 0.9rem;
+                /* Adjusts text size for smaller screens */
+            }
+        }
+
+        .bus-chart {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* One seat, aisle, and two seats */
+            gap: 5px;
+            max-width: 50px;
+            margin: 0;
+        }
+
+        .bus-chart.last-row {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* Last row with 4 seats */
+        }
+
+        .seat {
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .seat.aisle {
+            background-color: transparent;
+            pointer-events: none;
+        }
+
+        .seat.selected {
+            background-color: #FF5722;
+        }
+
+        .seat.unavailable {
+            background-color: #9E9E9E;
+            pointer-events: none;
+        }
+
+        .instructions {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -131,13 +202,29 @@
     <header>
         <h1>Ashtavinayak Yatra Tour Package</h1>
     </header>
-    <section>
+    <section class="responsive-section">
         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/5kYVqBYY_aE?si=x6S454duzd-ythKv"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
+        <p>
+            Namaste! Lord Ganesha wishes you all a happy and prosperous life!
+
+            Are you a service class person who is looking for a spiritual break at weekends? Then here is the good news
+            for you:
+
+            Wani Travels is organizing and specializes in a 2-day special Ashtavinayak yatra which starts every Friday
+            night
+            and ends Sunday night.
+
+            This trip includes an AC bus, stay, all meals, sightseeing, and to guide you at all places, our tour
+            manager.
+
+            So what are you waiting for? Book your tour right now.
+        </p>
     </section>
+
     <section class="itinerary">
         <h2 style="text-align: center;">ITINERARY</h2>
         <div class="itinerary-container">
@@ -174,6 +261,64 @@
             </div>
         </div>
         <button class="book-now">Book Now</button>
+    </section>
+    <section>
+        <h2 style="text-align: center;">Bus Booking Chart</h2>
+        <div class="bus-chart">
+            <!-- Row 1 -->
+            <button class="seat" data-seat="1A">1A</button>
+            <div class="seat aisle"></div>
+            <button class="seat" data-seat="1B">1B</button>
+            <button class="seat" data-seat="1C">1C</button>
+
+            <!-- Row 2 -->
+            <button class="seat" data-seat="2A">2A</button>
+            <div class="seat aisle"></div>
+            <button class="seat" data-seat="2B">2B</button>
+            <button class="seat" data-seat="2C">2C</button>
+
+            <!-- Row 3 -->
+            <button class="seat" data-seat="3A">3A</button>
+            <div class="seat aisle"></div>
+            <button class="seat" data-seat="3B">3B</button>
+            <button class="seat" data-seat="3C">3C</button>
+
+            <!-- Row 4 -->
+            <button class="seat" data-seat="4A">4A</button>
+            <div class="seat aisle"></div>
+            <button class="seat" data-seat="4B">4B</button>
+            <button class="seat" data-seat="4C">4C</button>
+
+            <!-- Row 5 -->
+            <button class="seat" data-seat="5A">5A</button>
+            <div class="seat aisle"></div>
+            <button class="seat" data-seat="5B">5B</button>
+            <button class="seat" data-seat="5C">5C</button>
+        </div>
+
+        <!-- Last Row -->
+        <div class="bus-chart last-row" style="margin-top: 10px;">
+            <button class="seat" data-seat="6A">6A</button>
+            <button class="seat" data-seat="6B">6B</button>
+            <button class="seat" data-seat="6C">6C</button>
+            <button class="seat" data-seat="6D">6D</button>
+        </div>
+
+        <div class="instructions">
+            <p>Click on a seat to select. Unavailable seats are grayed out.</p>
+        </div>
+
+        <script>
+            // JavaScript to handle seat selection
+            const seats = document.querySelectorAll('.seat:not(.aisle)');
+            seats.forEach(seat => {
+                seat.addEventListener('click', () => {
+                    if (!seat.classList.contains('unavailable')) {
+                        seat.classList.toggle('selected');
+                    }
+                });
+            });
+        </script>
     </section>
 
     <footer>
