@@ -60,62 +60,67 @@
 </head>
 
 <body>
-    <h2 style="text-align: center;">Bus Booking Chart</h2>
-    <div class="bus-chart">
-        <!-- Row 1 -->
-        <button class="seat" data-seat="1A">1A</button>
-        <div class="seat aisle"></div>
-        <button class="seat" data-seat="1B">1B</button>
-        <button class="seat" data-seat="1C">1C</button>
+    <section>
+        <div>
+            <h2 style="text-align: center;">Bus Booking Chart</h2>
+            <div class="bus-chart">
+                <!-- Row 1 -->
+                <button class="seat" data-seat="1A">1A</button>
+                <div class="seat aisle"></div>
+                <button class="seat" data-seat="1B">1B</button>
+                <button class="seat" data-seat="1C">1C</button>
 
-        <!-- Row 2 -->
-        <button class="seat" data-seat="2A">2A</button>
-        <div class="seat aisle"></div>
-        <button class="seat" data-seat="2B">2B</button>
-        <button class="seat" data-seat="2C">2C</button>
+                <!-- Row 2 -->
+                <button class="seat" data-seat="2A">2A</button>
+                <div class="seat aisle"></div>
+                <button class="seat" data-seat="2B">2B</button>
+                <button class="seat" data-seat="2C">2C</button>
 
-        <!-- Row 3 -->
-        <button class="seat" data-seat="3A">3A</button>
-        <div class="seat aisle"></div>
-        <button class="seat" data-seat="3B">3B</button>
-        <button class="seat" data-seat="3C">3C</button>
+                <!-- Row 3 -->
+                <button class="seat" data-seat="3A">3A</button>
+                <div class="seat aisle"></div>
+                <button class="seat" data-seat="3B">3B</button>
+                <button class="seat" data-seat="3C">3C</button>
 
-        <!-- Row 4 -->
-        <button class="seat" data-seat="4A">4A</button>
-        <div class="seat aisle"></div>
-        <button class="seat" data-seat="4B">4B</button>
-        <button class="seat" data-seat="4C">4C</button>
+                <!-- Row 4 -->
+                <button class="seat" data-seat="4A">4A</button>
+                <div class="seat aisle"></div>
+                <button class="seat" data-seat="4B">4B</button>
+                <button class="seat" data-seat="4C">4C</button>
 
-        <!-- Row 5 -->
-        <button class="seat" data-seat="5A">5A</button>
-        <div class="seat aisle"></div>
-        <button class="seat" data-seat="5B">5B</button>
-        <button class="seat" data-seat="5C">5C</button>
-    </div>
+                <!-- Row 5 -->
+                <button class="seat" data-seat="5A">5A</button>
+                <div class="seat aisle"></div>
+                <button class="seat" data-seat="5B">5B</button>
+                <button class="seat" data-seat="5C">5C</button>
+            </div>
 
-    <!-- Last Row -->
-    <div class="bus-chart last-row" style="margin-top: 10px;">
-        <button class="seat" data-seat="6A">6A</button>
-        <button class="seat" data-seat="6B">6B</button>
-        <button class="seat" data-seat="6C">6C</button>
-        <button class="seat" data-seat="6D">6D</button>
-    </div>
+            <!-- Last Row -->
+            <div class="bus-chart last-row" style="margin-top: 10px;">
+                <button class="seat" data-seat="6A">6A</button>
+                <button class="seat" data-seat="6B">6B</button>
+                <button class="seat" data-seat="6C">6C</button>
+                <button class="seat" data-seat="6D">6D</button>
+            </div>
 
-    <div class="instructions">
-        <p>Click on a seat to select. Unavailable seats are grayed out.</p>
-    </div>
+            <div class="instructions">
+                <p>Click on a seat to select. Unavailable seats are grayed out.</p>
+            </div>
 
-    <script>
-        // JavaScript to handle seat selection
-        const seats = document.querySelectorAll('.seat:not(.aisle)');
-        seats.forEach(seat => {
-            seat.addEventListener('click', () => {
-                if (!seat.classList.contains('unavailable')) {
-                    seat.classList.toggle('selected');
-                }
-            });
-        });
-    </script>
+            <script>
+                // JavaScript to handle seat selection
+                const seats = document.querySelectorAll('.seat:not(.aisle)');
+                seats.forEach(seat => {
+                    seat.addEventListener('click', () => {
+                        if (!seat.classList.contains('unavailable')) {
+                            seat.classList.toggle('selected');
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+    </section>
 </body>
 
 </html>
